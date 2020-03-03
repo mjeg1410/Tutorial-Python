@@ -1,13 +1,13 @@
 class students:
-    calc = 0
-    def __init__(self,name=student,age=student,class_=student):
+    def __init__(self,name,age):
         self.name = name
         self.age = age
-        self.class_ = class_
-    def score(self,scores=[],average=0):
-        for i in range(4):
-            scores = input ("Please enter your scores?")
-            for i in scores:
-                calc = calc + scores[i]
-                average = calc/(len(scores)
-current = students("Mike",25,"QA")
+    class_ = "student"
+    def score(self,score1,score2,score3):
+        average = (score1 + score2 +score3)/3
+        return average
+Mike=students("Mike",25)
+score1 = int(input("Please input your first score: "))
+score2 = int(input("Please input your second score: "))
+score3 = int(input("Please input your third score: "))
+print("The average score is: ",Mike.score(score1,score2,score3))
